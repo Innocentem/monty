@@ -30,4 +30,16 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct argss: to hold variables
+ * @stream - file connected to stream from file
+ * @line - string to be read from stream
+ */
+typedef struct argss
+{
+	FILE *stream;
+	char *line;
+}argt;
+
+
 #endif /* MONTY_H*/

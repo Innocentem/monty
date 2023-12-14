@@ -12,11 +12,13 @@
  */
 int main(argc, char **argv)
 {
-	(void) argv;
-	if (argc !=2)){
-		dprintf(2, "USAGE: monty file\n");
-		exit(EXIT_FAILURE);
-
+	ensure_args(argc);
+	initializer();
+	_stream(argv[1]);
+	while (getline(arguments->line, &n, arguments->stream) != -1)
+	{
+		printf("%s", arguments->line);
 	}
+	
 	return(0);
 }
