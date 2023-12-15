@@ -1,14 +1,14 @@
 #include "monty.h"
+
 /**
- * ensure_args: checks number of args at commandline.
- * @argc: number of args at cmnd line.
+ * ensure_args: checks the number of args at the command line.
+ * @argc: number of args at the command line.
  */
 void ensure_args(int argc)
 {
-	if (argc ==2)
-		return;
+    if (argc == 2)
+        return;
 
-	dprintf(2, "USAGE: monty file\n");
-	exit(EXIT_FAILURE);
-
+    fprintf(stderr, "USAGE: monty file\n");
+    exit(EXIT_FAILURE);
 }

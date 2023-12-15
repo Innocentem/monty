@@ -1,12 +1,11 @@
 #include "monty.h"
-/**
- * initializer: initialises ptr to argss struct
- */
-void initializer()
+#include <stdlib.h>
+
+void initializer(void)
 {
-	arguments = malloc(sizeof(argt));
-	if (arguments == NULL)
-		malloc_fail();
-	arguments->stream = NULL;
-	arguments->line = NULL;
+    arguments = malloc(sizeof(Arguments));
+    if (arguments == NULL)
+        malloc_fail();
+    arguments->stream = NULL;
+    arguments->line = NULL;
 }
