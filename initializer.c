@@ -1,6 +1,8 @@
 #include "monty.h"
 #include <stdlib.h>
 
+Arguments *arguments;
+
 void initializer(void)
 {
     arguments = malloc(sizeof(Arguments));
